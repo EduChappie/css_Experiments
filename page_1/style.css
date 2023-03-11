@@ -9,6 +9,36 @@ html, body {
     overflow: hidden;
     background-color: rgb(203, 255, 238);
 }
+.menu {
+    background: white;
+    display: none;
+    width: 200px;
+    height: 250px;
+    right: 5%;
+    top: 7%;
+    border-radius: 5px;
+    position: absolute;
+    padding: 15px 5px;
+    z-index: 1000;
+    text-align: center;
+}
+.menu p {
+    margin-bottom: 10px;
+}
+#config {
+    position: absolute;
+    cursor: pointer;
+    left: 95%;
+    top: 2%;
+    width: 35px;
+    height: 35px;
+    text-align: center;
+    z-index: 1000;
+}
+#config ion-icon {
+    width: 35px;
+    height: 35px;
+}
 
 div.start {
     position: absolute;

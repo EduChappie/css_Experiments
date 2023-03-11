@@ -1,5 +1,6 @@
 const gallery = document.querySelector(".gallery");
 
+//Efeito do Mouse
 gallery.addEventListener('mousemove', (key) => {
 
     const newX = key.clientX,
@@ -23,6 +24,7 @@ gallery.addEventListener('mousemove', (key) => {
     })
 });
 
+//Efeito para Título e botão
 const main = document.querySelector("main");
 main.addEventListener("mousemove", (key) => {
     const text = document.querySelector("div.start");
@@ -33,6 +35,26 @@ main.addEventListener("mousemove", (key) => {
 })
 
 
-document.getElementsByClassName("box")[0].addEventListener('click', (ck) => {
-    window.alert("funcionou!");
+document.querySelector("#buttonStart").addEventListener('click', (ck) => {
+    window.open("https://github.com/EduChappie");
+    window.alert("wow, você clicou no botão 😱");
 })
+
+
+function menubar(t) {
+    const menu = document.querySelector(".menu");
+    if (t) {
+        menu.style.display = "block";
+    } else { menu.style.display = "none"; }
+}
+
+var barrStatus = false;
+document.querySelector("#config").addEventListener('click', (ck) => {
+    if (barrStatus) { 
+        barrStatus = false;
+    } else { 
+        barrStatus = true; 
+    }
+    menubar(barrStatus)
+})
+
